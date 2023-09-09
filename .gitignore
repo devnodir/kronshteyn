@@ -1,0 +1,6 @@
+./backend/node_modules
+./backend/build
+./backend/package-lock.json
+./backend/.idea
+./backend/.env
+./backend/.DS_Store
