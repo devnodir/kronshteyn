@@ -1,0 +1,38 @@
+.login {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	&-content {
+		width: 100%;
+		max-width: 320px;
+		margin-bottom: 100px;
+		&-logo {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 24px;
+			img {
+				width: 165px;
+			}
+		}
+	}
+	&-form {
+		&-item {
+			margin-bottom: 12px;
+		}
+		&-button {
+			margin-top: 12px;
+		}
+	}
+	&-tabs {
+		width: fit-content;
+		margin: auto;
+		.ant-tabs-nav {
+			margin-bottom: 24px;
+		}
+		.ant-tabs-tab {
+			padding: 16px !important;
+			margin: 0 !important;
+		}
+	}
+}

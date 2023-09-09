@@ -1,0 +1,50 @@
+@import "./layout/layout.scss";
+@import "./components/Loader/loader.scss";
+
+@import "./pages/Login/login.scss";
+
+@import "react-quill/dist/quill.snow.css";
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #f5f6f7;
+	height: 100vh;
+}
+
+#root {
+	height: 100%;
+}
+
+.quill {
+	border: 1px solid #d9d9d9;
+	border-radius: 8px;
+	transition: all 0.3s, height 0s;
+	.ql-toolbar {
+		border: none;
+		border-bottom: 1px solid #d9d9d9;
+	}
+	.ql-container {
+		border: none;
+		min-height: 120px;
+		font-size: 16px;
+		.ql-editor {
+			h2 {
+				font-size: 22px;
+			}
+			h3 {
+				font-size: 18px;
+			}
+		}
+	}
+	&:hover,
+	&.focused {
+		border-color: #93bf24;
+	}
+	&.focused {
+		box-shadow: 0 0 0 2px rgba(148, 168, 8, 0.15);
+	}
+}
